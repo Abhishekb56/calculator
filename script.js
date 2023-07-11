@@ -1,0 +1,46 @@
+// display
+
+function display(num){
+
+    output.value += num;    //id.value=to get value
+}
+
+// clear =AC
+
+function clearAll(){
+    output.value="";
+}
+
+//  Evaluate
+
+function evaluateExp(){
+    // method-1
+    // exp=output.value;  //exp=7+7
+    // result=eval(exp); //result=14
+    // output.value=result; //display=14
+
+    // method-2
+
+    output.value=eval(output.value);
+}
+
+
+// remove last item
+
+function removeLast(){
+
+    currentExp=output.value;
+    output.value=currentExp.slice(0,-1);
+
+
+
+}
+
+function Percentage() {
+    var value = parseFloat(output.value);
+    if (!isNaN(value)) {
+      output.value = value / 100;
+    } else {
+      output.value = "Error";
+}
+}

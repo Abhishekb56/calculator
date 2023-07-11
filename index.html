@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+
+
+    <h1>CALCULATOR </h1>
+
+    <div class="container">
+
+
+
+      <div class="display">
+        <input id="output" type="text" class="result" placeholder="0">
+      </div>
+
+      <div class="first-row">
+        <input class="BTN" id="red" type="button" onclick="clearAll()" value="CLR" >
+        <input class="BTN" type="button" onclick="Percentage('%')" value="%" >
+        <input class="BTN" type="button" onclick="display('+')" value="+" >
+        <input class="BTN" id="orange" type="button"  onclick="removeLast()"  value="&#9003" >
+      </div>
+
+      <div class="second-row">
+        <input class="BTN" type="button" onclick="display(7)" value="7" >
+        <input class="BTN" type="button" onclick="display(8)" value="8" >
+        <input class="BTN" type="button" onclick="display(9)" value="9" >
+        <input class="BTN" type="button" onclick="display('/')" value="/" >
+      </div>
+
+      <div class="third-row">
+        <input class="BTN" type="button" onclick="display(4)" value="4" >
+        <input class="BTN" type="button" onclick="display(5)" value="5" >
+        <input class="BTN" type="button" onclick="display(6)" value="6" >
+        <input class="BTN" type="button" onclick="display('*')" value="*" >
+      </div>
+
+      <div class="fourth-row">
+        <input class="BTN" type="button" onclick="display(1)"  value="1">
+        <input class="BTN" type="button" onclick="display(2)" value="2">
+        <input class="BTN" type="button" onclick="display(3)" value="3">
+        <input class="BTN" type="button" onclick="display('-')"  value="-">
+      </div>
+
+      <div class="fifth-row">
+        
+          <input class="BTN" type="button" onclick="display(0)"  value="0">
+          <input class="BTN" type="button" onclick="display('.')" value="." >
+          
+          <input class="BTN"  id=green type="button" onclick="evaluateExp()" value="=" >
+        </div>
+
+        
+          
+       
+
+      </div>
+    
+    
+    
+</body>
+
+<script src="./script.js"></script>
+
+</html>
